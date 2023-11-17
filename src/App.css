@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* App.css */
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url('https://media.tenor.com/4JtQshxKpzsAAAAC/wallpaper-neon.gif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white; 
+  }  
+  
+.gameContainer {
+    flex-direction: column;
+    justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.randomNumber {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    justify-content: center;
+    font-size: 70px;
+    font-weight: 800;
+    margin: 40px;
+    text-shadow: 0 0 10px white;
+    color: #ff006f;
 }
 
-.App-link {
-  color: #61dafb;
+.number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: 700;
+    margin: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.724);
+    color: rgb(139, 5, 5);
+    box-shadow: 0 0 20px rgba(0, 255, 238, 0.7);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 50vh;
+    font-size: 20px;
+    font-weight:bold;
+}
+  
+.container button {
+    background-color: aqua;
+    box-shadow: 0 0 20px rgba(222, 224, 222, 0.7);
 }
